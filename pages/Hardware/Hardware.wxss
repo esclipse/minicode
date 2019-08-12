@@ -10,4 +10,5 @@
 
 .repairid{
   background: #fff;
+  border-radius: 5rpx;
 }

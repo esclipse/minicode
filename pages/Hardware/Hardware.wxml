@@ -2,7 +2,7 @@
 <view class="wrap repairform">
   <form bindsubmit="formSubmit" bindreset="formReset">
   <view class="control">
-      <input type="text" placeholder="平板设备ID" class="repairid"></input>
+      <input type="text" placeholder="平板设备ID" class="repairid" placeholder-style="color:red,font-size:10rpx"></input>
   </view>
   <view class="btn-area">
     <button form-type="submit">提交</button>
