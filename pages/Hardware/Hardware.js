@@ -12,7 +12,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    wx.setNavigationBarTitle({
+      title: '硬件报修'
+    })
   },
 
   /**
@@ -64,5 +66,12 @@ Page({
 
   },
   // event
-  
+
+  formSubmit: function(e){
+    console.log(e)
+  },
+
+  formReset: function(e){
+    console.log(e)
+  }
 })
