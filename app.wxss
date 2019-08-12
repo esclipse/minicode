@@ -7,4 +7,14 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+.wrap{
+  background: #20a8d8;
+  height: 100vh;
+}
+
+.pagetitle{
+  font-size: 40rpx;
+  text-align: center;
+}

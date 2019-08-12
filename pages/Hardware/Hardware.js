@@ -1,4 +1,4 @@
-// pages/login/login.js
+// pages/Hardware/Hardware.js
 Page({
 
   /**
@@ -63,9 +63,6 @@ Page({
   onShareAppMessage: function () {
 
   },
-  tohardware: function () {
-    wx.navigateTo({
-      url: '../Hardware/Hardware'
-    })
-  }
+  // event
+  
 })

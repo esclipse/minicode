@@ -1,0 +1,4 @@
+<!--pages/Hardware/Hardware.wxml-->
+<view class="wrap">
+   <view class="pagetitle">硬件报修</view>
+</view>

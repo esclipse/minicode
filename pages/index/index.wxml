@@ -1,23 +1,21 @@
-<view wx:if="{{isHide}}">
-    <view wx:if="{{canIUse}}" >
-        <view class='header'>
-            <image src='/images/logo.png'></image>
-        </view>
- 
-        <view class='content'>
-            <view>申请获取以下权限</view>
-            <text>获得你的公开信息(昵称，头像等)</text>
-        </view>
- 
-        <button class='bottom' type='primary'          open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
-            授权登录
-        </button> 
-    </view>
-    <view wx:else>请升级微信版本</view>
-</view>
- 
-<view wx:else>
-<button class='bottom' type='primary'          open-type="getLocation" lang="zh_CN" bindgetlocation="bindGetLocation">
-            授权登录
-        </button> 
+<view class="home">
+  <view class="system">报修系统</view>
+  <view class="operation">
+    <button bindtap="tohardware">硬件报修</button>
+  </view>
+  <view class="operation">
+    <button>工单提交</button>
+  </view>
+  <view class="operation">
+    <button>物流查询</button>
+  </view >
+  <view class="operation">
+    <button>报修查询</button>
+  </view>
+  <view class="operation">
+    <button>工单查询</button>
+  </view>
+  <view class="operation">
+    <button>问题反馈</button>
+  </view>
 </view>
