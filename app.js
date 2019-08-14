@@ -35,5 +35,21 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+
+  getExpressInfo: function (nu, cb) {
+    wx.request({
+      url: 'http://apis.baidu.com/kuaidicom/express_api/express_api?muti=0&order=desc&nu=' + nu,
+      data: {
+        x: ' ',
+        y: ' '
+      },
+      header: {
+        'apikey': '170a41d8abbc77f80e6895fb09b26b02'
+      },
+      success: function (res) {
+        cb(res.data);
+      }
+    })
   }
 })

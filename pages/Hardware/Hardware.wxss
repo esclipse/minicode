@@ -2,13 +2,118 @@
 .btn-area{
   display: flex;
   justify-content: center;
+  margin-top: 30rpx;
+}
+
+.addimg{
+  margin-top: 25rpx;
 }
 
 .repairform{
-  padding: 20rpx;
+  padding: 40rpx;
+}
+
+.repairform form{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .repairid{
   background: #fff;
   border-radius: 5rpx;
+  margin-bottom: 20rpx;
+}
+
+.control input{
+  font-size: 27rpx;
+  color: rgb(34, 32, 32);  
+}
+
+.placeholder{
+  font-size: 20rpx;
+}
+
+.question{
+  background: #fff;
+  width: auto;
+  margin-bottom: 10rpx;
+  border-radius: 5rpx;
+  font-size: 27rpx;
+  color: rgb(34, 32, 32);
+  height: 200rpx;
+  overflow-y: auto;
+}
+
+.control input{
+  height: 60rpx;
+}
+
+/* copy */
+
+page {
+  background: #f6f7f8;
+}
+
+.question-form {
+  margin: 25rpx;
+}
+
+.question-input-area {
+  background-color: #fff;
+  border: 1rpx solid #f2f2f2;
+  border-radius: 4rpx;
+}
+
+.question-title-wrap {
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  margin: 10rpx 30rpx;
+  padding: 20rpx 0;
+}
+
+.question-title {
+  flex: 1;
+}
+
+.weui-textarea-counter, .title-input-counter {
+  color: #b3b3b3;
+  font-size: 14px;
+  padding-left: 10rpx;
+}
+
+.weui-cell::before, .weui-cells::before, .weui-cell::after, .weui-cells::after {
+  border: none;
+}
+
+.question-images-area {
+  padding: 40rpx 0;
+}
+
+.question-images-tool {
+  display: flex;
+  align-items: center;
+}
+
+.question-images {
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.q-image-wrap {
+  width: 31%;
+  margin-right: 10rpx;
+}
+
+.q-image {
+  flex: 1;
+  height: 200rpx;
+  width: 100%;
+}
+
+.q-image-remover {
+  text-align: center;
 }

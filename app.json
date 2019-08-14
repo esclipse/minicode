@@ -2,9 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/login/login",
     "pages/repair/repair",
-    "pages/Hardware/Hardware"
+    "pages/Hardware/Hardware",
+    "pages/Logistics/Logistics"
   ],
   "window": {
     "backgroundTextStyle": "light",
