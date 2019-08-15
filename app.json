@@ -8,7 +8,8 @@
     "pages/User/User",
     "pages/Consultation/Consultation",
     "pages/Submit/Submit",
-    "pages/Payment/Payment"
+    "pages/Payment/Payment",
+    "pages/User/baoxiulog/baoxiulog"
   ],
   "window": {
     "backgroundTextStyle": "light",
