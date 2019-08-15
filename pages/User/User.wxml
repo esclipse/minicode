@@ -1,5 +1,9 @@
 <!--pages/User/User.wxml-->
 <view class="page">
+  <view class="avatar">
+    <text class="username">{{username}}</text>
+    <image src="{{useravatar}}" class="avatarimg"></image>
+  </view>
         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
         <view class="iconimgwrap">
 <image src="{{userimg[0]}}" class="iconimg"></image>

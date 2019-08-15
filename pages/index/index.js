@@ -5,13 +5,14 @@ Page({
    * Page initial data
    */
   data: { 
-    imgUrls: ['../../images/lcj.jpg', '../../images/lcj.jpg'],
+    imgUrls: ['../../images/swiper1.jpg', '../../images/swiper2.jpg'],
     indicatorDots: true,
     autoplay: false,
     interval: 3000,
     duration: 500,
     sectionicon: ['../../images/zixun.png', '../../images/baoxiu.png'
-    ,'../../images/tijiao.png', '../../images/zhifu.png']
+    ,'../../images/tijiao.png', '../../images/zhifu.png'],
+    activeimg: ['../../images/swiper1.jpg']
   },
 
   /**

@@ -13,7 +13,9 @@ Page({
       '../../images/fenxiang.png',
       '../../images/mmiphone.png',
       '../../images/auout.png',
-      ]
+      ],
+    useravatar: '../../images/8.jpg',
+    username: "李乡下"
   },
 
   /**
