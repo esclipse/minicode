@@ -1,11 +1,15 @@
-// pages/Logistics/Logistics.js
+// pages/Logistics/Logistics.js;
+const app = getApp();
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    userPwd: '',
+    areaIndex: 0,
+    area: ['点击选择', '申通', 'EMS', '顺丰', '圆通', '中通', '韵达', '天天', '汇通', '全峰', '德邦', '宅急送'],
+    realvalue: [',', 'shentong', 'ems','shunfeng', 'yuantong', 'zhongtong', 'yunda', 'tiantian', 'huitongkuaidi', 'quanfengkuaidi', 'debangwuliu', 'zhaijisong']
   },
 
   /**
@@ -62,5 +66,22 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  searchlog: function(){
+    console.log(this.data,'hello worl');
+  },
+  // log number
+  passWdInput: function (e) {
+    this.setData({
+      userPwd: e.detail.value
+    })
+  },
+
+  bindPickerChange: function (e) {
+    this.setData({             //**重点**！！！使用setData重新给data赋值或新建data
+      userName: this.data.realvalue[e.detail.value],
+      areaIndex: e.detail.value
+    })
+  },
 })

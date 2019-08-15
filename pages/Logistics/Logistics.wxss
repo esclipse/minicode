@@ -1,1 +1,10 @@
 /* pages/Logistics/Logistics.wxss */
+
+.logsec{
+  width: 100vw;
+  margin-bottom: 10rpx;
+}
+
+.logsecinput{
+  border: 1px solid #b2b2b2;
+}

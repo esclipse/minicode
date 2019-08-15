@@ -27,12 +27,12 @@
 }
 
 .control input{
-  font-size: 27rpx;
+  /* font-size: 27rpx; */
   color: rgb(34, 32, 32);  
 }
 
 .placeholder{
-  font-size: 20rpx;
+  /* font-size: 20rpx; */
 }
 
 .question{
@@ -40,7 +40,7 @@
   width: auto;
   margin-bottom: 10rpx;
   border-radius: 5rpx;
-  font-size: 27rpx;
+  /* font-size: 27rpx; */
   color: rgb(34, 32, 32);
   height: 200rpx;
   overflow-y: auto;

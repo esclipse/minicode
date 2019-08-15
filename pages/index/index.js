@@ -4,16 +4,27 @@ Page({
   /**
    * Page initial data
    */
-  data: {
-
+  data: { 
+    imgUrls: ['../../images/lcj.jpg', '../../images/lcj.jpg'],
+    indicatorDots: true,
+    autoplay: false,
+    interval: 3000,
+    duration: 500,
+    sectionicon: ['../../images/zixun.png', '../../images/baoxiu.png'
+    ,'../../images/tijiao.png', '../../images/zhifu.png']
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '主页'
+    wx.setNavigationBarColor({
+      frontColor: '#ffffff',
+      backgroundColor: '#63c2de',
+      animation: {
+        duration: 400,
+        timingFunc: 'easeIn'
+      }
     })
   },
 
@@ -68,6 +79,11 @@ Page({
   tohardware: function () {
     wx.navigateTo({
       url: '../Hardware/Hardware'
+    })
+  },
+  tologistics: function(){
+    wx.navigateTo({
+      url: '../Logistics/Logistics'
     })
   }
 })

@@ -1,0 +1,34 @@
+/* pages/User/User.wxss */
+.page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20rpx;
+}
+
+.useritem{
+  height: 10vh;
+  display: flex;
+  align-items:  center;
+}
+
+.iconimgwrap{
+   height: 50rpx;
+   width: 50rpx;
+   margin-right: 20rpx;
+}
+
+.iconimg{
+  width: 100%;
+  height: 100%;
+}
+
+.usertext{
+  border-top: 1rpx solid #909090;
+  color: #909090;
+  flex-grow: 1;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}

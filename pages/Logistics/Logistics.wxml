@@ -1,13 +1,14 @@
 <!--pages/Logistics/Logistics.wxml-->
 <view class="container">
-  <view bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">欢迎您，{{userInfo.nickName}}</text>
-  </view>
-  <view class="section">
-    <input placeholder-style="color:white" class="order-input" placeholder="请输入订单号" bindchange="bindChange" id="orderId" />
-    <input placeholder-style="color:white" class="order-input" placeholder="请输入快递公司" bindchange="bindChange" id="company" />
-  </view>
-  <text>{{errTip}}</text>
-  <button class="query-btn" type="default" size="{{primarySize}}" loading="" plain="true" disabled="{{disabled}}" bindtap="query"> 查询 </button>
+  <form>
+       <picker bindchange="bindPickerChange" value="{{areaIndex}}" range="{{area}}">
+      <view class="inpicker">快递公司:{{area[areaIndex]}} </view>
+    
+    </picker>
+    <view class="logsec">
+      <input type="text" placeholder="快递单号" class="logsecinput" bindinput="passWdInput"></input>
+    </view>
+  </form>
+  <button type="primary" size="mini" bindtap="searchlog">查询</button>
+  <button type="primary" class="weui-btn" size="mini">webui btn</button>
 </view>

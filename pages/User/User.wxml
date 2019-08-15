@@ -1,0 +1,59 @@
+<!--pages/User/User.wxml-->
+<view class="page">
+        <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+        <view class="iconimgwrap">
+<image src="{{userimg[0]}}" class="iconimg"></image>
+        </view>
+        <view class="usertext">
+          <text>物流记录</text>
+        </view>
+        </navigator>
+         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+         <view class="iconimgwrap">
+<image src="{{userimg[1]}}" class="iconimg"></image>
+         </view>
+        <view class="usertext">
+          <text>报修记录</text>
+        </view>
+        </navigator>
+         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+         <view class="iconimgwrap">
+         <image src="{{userimg[2]}}" class="iconimg"></image>
+         </view>
+        <view class="usertext">
+        <text>工单记录</text>
+        </view>
+        </navigator>
+        <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+         <view class="iconimgwrap">
+         <image src="{{userimg[3]}}" class="iconimg"></image>
+         </view>
+        <view class="usertext">
+        <text>问题反馈</text>
+        </view>
+        </navigator>
+         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+         <view class="iconimgwrap">
+<image src="{{userimg[4]}}" class="iconimg"></image>
+         </view>
+        <view class="usertext">
+        <text>分享好友</text>
+        </view>
+        </navigator>
+         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+   <view class="iconimgwrap">
+<image src="{{userimg[5]}}" class="iconimg"></image>
+         </view>
+        <view class="usertext">
+          <text>联系客服</text>
+        </view>
+        </navigator>
+         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+   <view class="iconimgwrap">
+<image src="{{userimg[6]}}" class="iconimg"></image>
+         </view>
+        <view class="usertext">
+        <text>关于我们</text>
+        </view>
+        </navigator>
+</view>
