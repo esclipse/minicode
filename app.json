@@ -10,7 +10,8 @@
     "pages/Submit/Submit",
     "pages/Payment/Payment",
     "pages/User/baoxiulog/baoxiulog",
-    "pages/User/kefu/kefu"
+    "pages/User/kefu/kefu",
+    "pages/User/repair/repair"
   ],
   "window": {
     "backgroundTextStyle": "light",

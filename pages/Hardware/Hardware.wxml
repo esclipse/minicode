@@ -1,5 +1,6 @@
 <!--pages/Hardware/Hardware.wxml-->
-<view class="wrap repairform">
+<view class="wrap">
+  <view class="wrapform">
   <form bindsubmit="formSubmit" bindreset="formReset">
   <view class="control">
       <input type="text" placeholder="平板设备ID" class="repairid" placeholder-class="placeholder"></input>
@@ -31,12 +32,14 @@
 </view>
 
 
-  <view class="addimg">
+  <!-- <view class="addimg">
     <button size="mini" bindtap="addimg">添加图片</button>
-  </view>
+  </view> -->
   <view class="btn-area">
     <button form-type="submit" size="mini" type="primary">提交    </button>
     <button form-type="reset" size="mini">重置</button>
+    <button size="mini" class="jikuaidi">寄送快递</button>
   </view>
   </form>
+  </view>
 </view>

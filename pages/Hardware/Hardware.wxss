@@ -9,41 +9,42 @@
   margin-top: 25rpx;
 }
 
-.repairform{
-  padding: 40rpx;
-}
 
-.repairform form{
-  height: 100vh;
+.control{
+  height: 100rpx;
+  line-height: 100rp;
+  margin-bottom: 10rpx;
+  border-bottom: 2rpx solid #b2b2b2;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.repairid{
-  background: #fff;
-  border-radius: 5rpx;
-  margin-bottom: 20rpx;
+  align-items: center;
 }
 
 .control input{
   /* font-size: 27rpx; */
   color: rgb(34, 32, 32);  
+  height: 80rpx;
+  line-height: 80rp;
 }
 
-.placeholder{
-  /* font-size: 20rpx; */
+.jikuaidi{
+  background-color:#20a8d8; 
+}
+
+.wrapform{
+  padding: 1rem;
+  background: #fff;
 }
 
 .question{
-  background: #fff;
   width: auto;
   margin-bottom: 10rpx;
+  margin-top: 40rpx;
   border-radius: 5rpx;
   /* font-size: 27rpx; */
   color: rgb(34, 32, 32);
   height: 200rpx;
   overflow-y: auto;
+  border: 1rpx solid #b2b2b2
 }
 
 .control input{

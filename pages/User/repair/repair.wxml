@@ -1,0 +1,17 @@
+<!--pages/User/repair/repair.wxml-->
+<view>
+  <view wx:for="{{repair}}" wx:key="{{index}}">
+    <view>
+      <text>学校</text> === {{item.school}}
+    </view>
+    <view>
+      <text>id</text> === {{item.id}}
+    </view>
+    <view>
+      <text>类型</text> === {{item.type}}
+    </view>
+    <view>
+      <text>时间</text> === {{item.time}}
+    </view>
+  </view>
+</view>

@@ -14,9 +14,6 @@ Page({
    */
   onLoad: function (options) {
     $init(this);
-    wx.setNavigationBarTitle({
-      title: '硬件报修'
-    })
   },
 
   /**

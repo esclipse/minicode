@@ -12,7 +12,7 @@
           <text>物流记录</text>
         </view>
         </navigator>
-         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+         <navigator url="./repair/repair"     hover-class="navigator-hover" class="useritem">
          <view class="iconimgwrap">
 <image src="{{userimg[1]}}" class="iconimg"></image>
          </view>
