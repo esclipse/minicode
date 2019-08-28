@@ -1,11 +1,12 @@
-// pages/User/baoxiulog/baoxiulog.js
+// pages/User/baoxiulog/baoxiulog.js;
+var app = getApp()
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    logid: ""
   },
 
   /**
@@ -62,5 +63,20 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  // event
+  changeValue: function (e) {
+    // console.log(e.detail.value,'value')
+    this.setData({
+      logid: e.detail.value
+    })
+  },
+
+  searchLog : function () {
+    console.log(this.data.logid);
+    app.getExpressInfo(this.data.logid,function(data){
+      console.log(data)
+    })
+  },
+
 })

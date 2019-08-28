@@ -1,2 +1,8 @@
-<!--pages/User/baoxiulog/baoxiulog.wxml-->
-<text>pages/User/baoxiulog/baoxiulog.wxml</text>
+<view class="wrap">
+  <view class="wuliu">
+   <input value="{{logid}}" bindinput="changeValue" class="input"
+   auto-focus="true"
+   placeholder="输入快递单号"></input>
+   <button bindtap="searchLog" class="search">查询物流</button>
+  </view>
+</view>
