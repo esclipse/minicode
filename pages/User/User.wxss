@@ -31,6 +31,24 @@
   height: 10vh;
   display: flex;
   align-items: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.usertext button{
+  background: #fff;
+  color: #b2b2b2;
+  text-align: left;
+  height: 9vh;
+  font-size: 38rpx;
+  line-height: 9vh;
+  padding-left: 0;
+  /* background: pink; */
+  width: 100%;
+}
+
+.usertext button::after{
+  border: none;
 }
 
 .avatar{

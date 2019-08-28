@@ -9,7 +9,8 @@
     "pages/Consultation/Consultation",
     "pages/Submit/Submit",
     "pages/Payment/Payment",
-    "pages/User/baoxiulog/baoxiulog"
+    "pages/User/baoxiulog/baoxiulog",
+    "pages/User/kefu/kefu"
   ],
   "window": {
     "backgroundTextStyle": "light",

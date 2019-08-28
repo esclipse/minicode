@@ -44,12 +44,12 @@
         <text>分享好友</text>
         </view>
         </navigator>
-         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+         <navigator url="./kefu/kefu"     hover-class="navigator-hover" class="useritem">
    <view class="iconimgwrap">
 <image src="{{userimg[5]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
-          <text>联系客服</text>
+          <button open-type="contact">联系客服</button>
         </view>
         </navigator>
          <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
