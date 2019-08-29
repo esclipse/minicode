@@ -1,4 +1,5 @@
 // pages/User/User.js
+const app = getApp();
 Page({
 
   /**
@@ -14,14 +15,19 @@ Page({
       '../../images/mmiphone.png',
       '../../images/auout.png',
       ],
-    useravatar: '../../images/8.jpg',
-    username: "李乡下"
+    avatarUrl: '',
+    nickName: ""
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    const { nickName, avatarUrl } = app.globalData.userInfo;
+    this.setData({
+      nickName,
+      avatarUrl
+    })
     wx.setNavigationBarColor({
       frontColor: '#ffffff',
       backgroundColor: '#63c2de',

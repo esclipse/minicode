@@ -13,28 +13,32 @@
 </view>
 <view class="section">
   <view class="iconwrap">
-    <navigator url="/pages/Consultation/Consultation"     hover-class="navigator-hover" class="sectionicon">
-<image src="{{sectionicon[0]}}" class="iconimg"></image>
-    </navigator>
-    <text class="icontext">在线咨询</text>
+    <view class="sectionicon">
+        <image src="{{sectionicon[0]}}" class="iconimg">
+        </image>
+    </view>
+    <button open-type="contact" size="mini" class="zixun">在线咨询</button>
   </view>
    <view class="iconwrap">
     <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="sectionicon">
 <image src="{{sectionicon[1]}}" class="iconimg"></image>
     </navigator>
-    <text class="icontext">硬件报修</text>
+    <!-- <text class="icontext">硬件报修</text> -->
+    <button size="mini" class="zixun">硬件报修</button>
   </view>
    <view class="iconwrap">
     <navigator url="/pages/Submit/Submit"     hover-class="navigator-hover" class="sectionicon">
 <image src="{{sectionicon[2]}}" class="iconimg"></image>
     </navigator>
-    <text class="icontext">提交工单</text>
+    <!-- <text class="icontext">提交工单</text> -->
+    <button size="mini" class="zixun">提交工单</button>
   </view>
    <view class="iconwrap">
     <navigator url="/pages/Payment/Payment"     hover-class="navigator-hover" class="sectionicon">
 <image src="{{sectionicon[3]}}" class="iconimg"></image>
     </navigator>
-    <text class="icontext">支付费用</text>
+    <!-- <text class="icontext">支付费用</text> -->
+    <button size="mini" class="zixun">支付费用</button>    
   </view>
 </view>
   <view class="componey">

@@ -34,11 +34,10 @@ App({
     })
   },
 
-  
-
   globalData: {
     userInfo: null
   },
+
   getExpressInfo: function (nu, cb) {
     wx.request({
       url: 'https://www.kuaidi100.com/query?type=yuantong&postid=YT4042013613380',   
@@ -52,16 +51,4 @@ App({
       }
     })
   },
-
-  // getcompony: function(cb){
-  //   wx.request({
-  //     url: 'http://api.kdniao.com/Ebusiness/EbusinessOrderHandle.aspx',
-  //     data: {
-  //       LogisticCode: "3967950525457"
-  //     },
-  //     success: function(res){
-  //       cb(res)
-  //     }
-  //   })
-  // }
 })
