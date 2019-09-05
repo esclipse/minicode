@@ -1,28 +1,17 @@
 /* pages/login/login.wxss */
-.header {
-    margin: 90rpx 0 90rpx 50rpx;
+.login{
+  background: lightblue;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.header image {
-    width: 400rpx;
-   height: 150rpx; 
+.title{
+  margin-bottom: 20vh;
 }
 
-.content {
-    margin-left: 50rpx;
-    margin-bottom: 90rpx;
+.getauth{
+  background: gold;
 }
-
-.content text {
-    display: block;
-    color: #9d9d9d;
-    margin-top: 40rpx;
-}
-
-.bottom {
-    border-radius: 80rpx;
-    margin: 70rpx 50rpx;
-    font-size: 35rpx;
-}
-
-
