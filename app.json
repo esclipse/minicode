@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/Hardware/Hardware",
     "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
     "pages/repair/repair",
-    "pages/Hardware/Hardware",
     "pages/Logistics/Logistics",
     "pages/User/User",
     "pages/Consultation/Consultation",
@@ -17,7 +17,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#63c2de",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },

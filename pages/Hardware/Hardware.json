@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "硬件报修"
+  "usingComponents": {
+    "Header": "/components/Header/Header"
+  },
+  "navigationBarTitleText": "硬件报修",
+  "navigationBarTitleColor": "blue"
 }

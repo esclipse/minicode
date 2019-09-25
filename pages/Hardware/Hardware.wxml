@@ -1,45 +1,106 @@
 <!--pages/Hardware/Hardware.wxml-->
-<view class="wrap">
-  <view class="wrapform">
-  <form bindsubmit="formSubmit" bindreset="formReset">
-  <view class="control">
-      <input type="text" placeholder="平板设备ID" class="repairid" placeholder-class="placeholder"></input>
-  </view>
-  <view class="control">
-      <input type="text" placeholder="报修学校" class="repairid" placeholder-class="placeholder"></input>
-  </view>
-  <view class="control">
-      <input type="text" placeholder="姓名" class="repairid"
-      placeholder-class="placeholder"></input>
-  </view>
-  <view class="control">
-      <input placeholder="联系电话" class="repairid" placeholder-class="placeholder" type="number"></input>
-  </view>
-  <view>
-    <textarea placeholder="问题描述" auto-focus maxlength="40" placeholder-class="placeholder" class="question">
-    </textarea>
-  </view>
-  <!-- img -->
-<view class="question-images">
-  <block wx:for="{{images}}" wx:key="*this">
-    <view class="q-image-wrap">
-      <!-- 图片缩略图  -->
-      <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
-      <!-- 移除图片的按钮  -->
-      <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">删除</view>
+<view class="hardwrap">
+  <Header />
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                    <view>设备型号</view>
+                </view>
+                   <view class="weui-cell__hd" style="width: 105px">
+                    <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                        <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+                    </picker>
+                   </view>
+            </view>
+        </view>
+
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                    <view>报修学校</view>
+                </view>
+                   <view class="weui-cell__hd" style="width: 105px">
+                    <picker bindchange="bindSchool" value="{{schoolIndex}}" range="{{school}}">
+                        <view class="weui-select">{{school[schoolIndex]}}</view>
+                    </picker>
+                   </view>
+            </view>
+        </view>
+
+        <view class="divider"></view>
+
+        <view class="weui-cells weui-cells_after-title formitem">
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"/>
+                </view>
+            </view>
+        </view>
+
+                 <view class="weui-cells weui-cells_after-title formitem">
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">联系电话</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"/>
+                </view>
+            </view>
+        </view>
+
+           <view class="weui-cells__title">问题描述</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+       
+
+
+       
+<view class="page__bd">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__hd">
+                          <view class="weui-uploader__overview">
+                              <view class="weui-uploader__title">图片上传</view>
+                              <view class="weui-uploader__info">{{files.length}}/3</view>
+                          </view>
+                          <view class="weui-uploader__tips">
+                            上传提示
+                          </view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{files}}" wx:key="*this">
+                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+
+                             
+                        
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
     </view>
-  </block>
-</view>
 
-
-  <!-- <view class="addimg">
-    <button size="mini" bindtap="addimg">添加图片</button>
-  </view> -->
-  <view class="btn-area">
-    <button form-type="submit" size="mini" type="primary">提交    </button>
-    <button form-type="reset" size="mini">重置</button>
-    <button size="mini" class="jikuaidi">寄送快递</button>
-  </view>
-  </form>
-  </view>
+    <view class="submit">
+      <button class="weui-btn" type="primary">提交</button>
+    </view>
 </view>

@@ -1,0 +1,13 @@
+/* components/Header/Header.wxss */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 15rpx 0 ;
+  margin-bottom: 20rpx;
+}
+
+button{
+  margin: 0;
+}

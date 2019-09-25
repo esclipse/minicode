@@ -1,5 +1,5 @@
 // pages/User/User.js
-const app = getApp();
+// const app = getApp();
 Page({
 
   /**
@@ -23,7 +23,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const { nickName, avatarUrl } = app.globalData.userInfo;
+    const { nickName, avatarUrl } = wx.getStorageSync('userinfo');
     this.setData({
       nickName,
       avatarUrl

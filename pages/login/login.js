@@ -5,14 +5,23 @@ Page({
    * Page initial data
    */
   data: {
-
+  
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    wx.getSetting({
+      success: function(res) {
+        const userInfoAuth = res.authSetting['scope.userInfo'];
+        if(userInfoAuth){
+          wx.switchTab({
+            url: '../index/index',
+          })
+        }
+      }
+    })
   },
 
   /**
@@ -66,8 +75,6 @@ Page({
 
   getUserInfo: function (e) {
     let that = this;
-    // console.log(e)
-    // 获取用户信息
     wx.getSetting({
       success(res) {
         // console.log("res", res)
@@ -76,10 +83,39 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success(res) {
-              console.log("获取用户信息成功", res)
-              that.setData({
-                name: res.userInfo.nickName
+              const { nickName, avatarUrl } = res.userInfo;
+              const userinfo = {
+                nickName,
+                avatarUrl
+              }
+              wx.setStorageSync('userinfo', userinfo)
+              wx.switchTab({
+                url: '../index/index'
               })
+              // wx.login({
+              //   success: function(res){
+              //     wx.request({
+              //       url: 'http://localhost:80/login',
+              //       data: {
+              //         code: res.code,
+              //         nickName,
+              //         avatarUrl,
+              //       },
+              //       header: {
+              //         'content-type': "application/json"
+              //       },
+              //       success: function (res) {
+              //           wx.setStorageSync('userinfo', userinfo)
+              //           wx.switchTab({
+              //             url: '../index/index'
+              //           })
+              //       },
+              //       fail: function (err) {
+              //         console.log(err,'error')
+              //       }
+              //     })
+              //   }
+              // })
             },
             fail(res) {
               console.log("获取用户信息失败", res)
@@ -87,23 +123,6 @@ Page({
           })
         } else {
           console.log("未授权=====")
-          that.showSettingToast("请授权")
-        }
-      }
-    })
-  },
-
-  showSettingToast: function (e) {
-    wx.showModal({
-      title: '提示！',
-      confirmText: '去设置',
-      showCancel: false,
-      content: e,
-      success: function (res) {
-        if (res.confirm) {
-          wx.navigateTo({
-            url: '../setting/setting',
-          })
         }
       }
     })

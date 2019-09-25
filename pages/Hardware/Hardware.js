@@ -6,7 +6,12 @@ Page({
    * Page initial data
    */
   data: {
-    images: []
+    files: [],
+    countryCodes: ["请选择", "+80", "+84", "+87"],
+    countryCodeIndex: 0,
+    schoolIndex: 0,
+    school: ["请选择", "+80", "+84", "+87"],
+
   },
 
   /**
@@ -65,40 +70,37 @@ Page({
 
   },
   // event
-
-  formSubmit: function(e){
-    console.log(e)
+  bindCountryCodeChange: function (e) {
+    this.setData({
+      countryCodeIndex: e.detail.value
+    })
   },
 
-  formReset: function(e){
-    console.log(e)
+  bindSchool: function (e) {
+    this.setData({
+      schoolIndex: e.detail.value
+    })
   },
 
-  addimg : function(){
+  chooseImage: function (e) {
+    var that = this;
     wx.chooseImage({
-      sizeType: ['original', 'compressed'],  //可选择原图或压缩后的图片
-      sourceType: ['album', 'camera'], //可选择性开放访问相册、相机
-      success: res=>{
-        const images = this.data.images.concat(res.tempFilePaths)
-        this.data.images = images.length <= 3 ? images : images.slice(0, 3);
-        $digest(this);
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+        that.setData({
+          files: that.data.files.concat(res.tempFilePaths)
+        });
       }
     })
   },
-
-  removeImage(e) {
-    const idx = e.target.dataset.idx
-    this.data.images.splice(idx, 1)
-    $digest(this)
-  },
-  // preview
-  handleImagePreview(e) {
-    const idx = e.target.dataset.idx
-    const images = this.data.images
+  previewImage: function (e) {
     wx.previewImage({
-      current: images[idx],  //当前预览的图片
-      urls: images,  //所有要预览的图片
+      current: e.currentTarget.id, // 当前显示图片的http链接
+      urls: this.data.files // 需要预览的图片http链接列表
     })
   }
+
 
 })
