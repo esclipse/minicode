@@ -1,6 +1,7 @@
 <view class="login">
   <view class="title">希科普报修系统</view>
   <view>
-    <button open-type="getUserInfo" class="getauth" bindgetuserinfo="getUserInfo" lang="zh_CN">微信授权登录</button>
+    <text>您还未进行微信授权</text>
+    <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class="getauth">微信授权登录</button>
   </view>
 </view>

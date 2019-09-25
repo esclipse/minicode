@@ -6,12 +6,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 .title{
   margin-bottom: 20vh;
+  font-size: 60rpx;
 }
 
 .getauth{
-  background: gold;
+  margin: 50rpx 0 ;
+  color: #fff;
 }

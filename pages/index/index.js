@@ -18,15 +18,8 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
-    wx.setNavigationBarColor({
-      frontColor: '#ffffff',
-      backgroundColor: '#63c2de',
-      animation: {
-        duration: 400,
-        timingFunc: 'easeIn'
-      }
-    })
+  onLoad: function () {
+    console.log('hello world')
   },
 
   /**

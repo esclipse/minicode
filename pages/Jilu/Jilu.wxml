@@ -1,2 +1,3 @@
-<!--pages/Jilu/Jilu.wxml-->
-<text>pages/Jilu/Jilu.wxml</text>
+<view>
+<text>hello world</text>
+</view>
