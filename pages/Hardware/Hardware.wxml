@@ -1,15 +1,29 @@
 <!--pages/Hardware/Hardware.wxml-->
 <view class="hardwrap">
-  <Header />
+  <Header bind:search="clickme"/>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_select">
                 <view class="weui-cell__bd weui-cell__bd_in-select-before">
-                    <view>设备型号</view>
+            <view>
+<view  wx:if="{{name==='1'}}">设备型号</view>
+<view wx:elif="{{name=='2'}}">软件平台</view>
+</view>
                 </view>
-                   <view class="weui-cell__hd" style="width: 105px">
-                    <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                   <view class="weui-cell__hd" >
+                               <view>
+<view  wx:if="{{name==='1'}}">
+
+     <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
                         <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
                     </picker>
+</view>
+<view wx:elif="{{name=='2'}}">
+     <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{pingtai}}">
+                        <view class="weui-select">{{pingtai[countryCodeIndex]}}</view>
+                    </picker>
+</view>
+</view>
+               
                    </view>
             </view>
         </view>
@@ -19,7 +33,7 @@
                 <view class="weui-cell__bd weui-cell__bd_in-select-before">
                     <view>报修学校</view>
                 </view>
-                   <view class="weui-cell__hd" style="width: 105px">
+                   <view class="weui-cell__hd">
                     <picker bindchange="bindSchool" value="{{schoolIndex}}" range="{{school}}">
                         <view class="weui-select">{{school[schoolIndex]}}</view>
                     </picker>
@@ -29,7 +43,7 @@
 
         <view class="divider"></view>
 
-        <view class="weui-cells weui-cells_after-title formitem">
+        <view class="weui-cells weui-cells_after-title ">
             <view class="weui-cell ">
                 <view class="weui-cell__hd">
                     <view class="weui-label">姓名</view>
@@ -40,7 +54,7 @@
             </view>
         </view>
 
-                 <view class="weui-cells weui-cells_after-title formitem">
+                 <view class="weui-cells weui-cells_after-title ">
             <view class="weui-cell ">
                 <view class="weui-cell__hd">
                     <view class="weui-label">联系电话</view>

@@ -7,11 +7,13 @@ Page({
    */
   data: {
     files: [],
-    countryCodes: ["请选择", "+80", "+84", "+87"],
+    countryCodes: ["请选择", "F503H", "F503K", "SP1009V"],
+    pingtai: ["请选择", "平台1", "平台2", "平台3"],
+
     countryCodeIndex: 0,
     schoolIndex: 0,
-    school: ["请选择", "+80", "+84", "+87"],
-
+    school: ["请选择", "山西大学", "深圳大学", "香港大学"],
+    name: "1",
   },
 
   /**
@@ -100,7 +102,11 @@ Page({
       current: e.currentTarget.id, // 当前显示图片的http链接
       urls: this.data.files // 需要预览的图片http链接列表
     })
+  },
+
+  clickme: function (e) {
+    this.setData({
+      name: e.detail.name
+    })
   }
-
-
 })

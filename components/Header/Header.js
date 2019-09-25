@@ -19,9 +19,11 @@ Component({
    */
   methods: {
     handleClick: function(e){
-      console.log(e.target.dataset.name,'iiii');
       this.setData({
         name: e.target.dataset.name
+      });
+      this.triggerEvent("search", {
+        name: this.data.name
       })
     }
   }

@@ -1,6 +1,3 @@
-.formitem{
-  margin-bottom: 1rpx;
-}
 
 .divider{
   height: 20rpx;
