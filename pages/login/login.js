@@ -12,16 +12,16 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    // wx.getSetting({
-    //   success: function(res) {
-    //     const userInfoAuth = res.authSetting['scope.userInfo'];
-    //     if(userInfoAuth){
-    //       wx.switchTab({
-    //         url: '../index/index',
-    //       })
-    //     }
-    //   }
-    // })
+    wx.getSetting({
+      success: function(res) {
+        const userInfoAuth = res.authSetting['scope.userInfo'];
+        if(userInfoAuth){
+          wx.switchTab({
+            url: '../index/index',
+          })
+        }
+      }
+    })
   },
 
   /**
