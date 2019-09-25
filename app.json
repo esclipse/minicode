@@ -1,19 +1,20 @@
 {
   "pages": [
-    "pages/Hardware/Hardware",
     "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
     "pages/repair/repair",
     "pages/Logistics/Logistics",
-    "pages/User/User",
     "pages/Consultation/Consultation",
     "pages/Submit/Submit",
     "pages/Payment/Payment",
     "pages/User/baoxiulog/baoxiulog",
     "pages/User/kefu/kefu",
     "pages/User/repair/repair",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/Hardware/Hardware",
+    "pages/Jilu/Jilu",
+    "pages/User/User"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,6 +33,12 @@
         "iconPath": "images/home.png",
         "pagePath": "pages/index/index",
         "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/baoxiulog.png",
+        "iconPath": "images/baoxiulog.png",
+        "pagePath": "pages/Jilu/Jilu",
+        "text": "记录"
       },
       {
         "selectedIconPath": "images/userselect.png",
