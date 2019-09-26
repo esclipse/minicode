@@ -1,10 +1,10 @@
 <!--pages/User/User.wxml-->
 <view class="page">
   <view class="avatar">
-  <!-- <view class="avawrap">
+  <view class="avawrap">
     <image src="{{avatarUrl}}" class="avatarimg"></image>
     <text class="username">{{nickName}}</text>
-  </view> -->
+  </view>
     <image src="/images/bguser.png" class="bguser"></image>
   </view>
         <view class="navigator">

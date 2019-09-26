@@ -12,7 +12,7 @@ Page({
     duration: 500,
     sectionicon: ['../../images/1.png', '../../images/2.png'
       , '../../images/3.png','../../images/guanggao.png'],
-    activearr: [{ id: 1, img: '../../images/swiper1.png' }, { id: 1, img: '../../images/swiper1.png' }]
+    activearr: [{ id: 1, img: '../../images/swiper2.jpg' }, { id: 2, img: '../../images/swiper2.jpg' }]
   },
 
   /**
