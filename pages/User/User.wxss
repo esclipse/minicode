@@ -60,11 +60,13 @@
   border: none;
 }
 
-.avatar{
-  padding-left: 50rpx;
-  padding-bottom: 50rpx;
-  padding-top: 50rpx;
-  background: #fff;
+.avatar {
+  height: 300rpx;
+}
+
+.bguser{
+  height: 100%;
+  width: 100%;
 }
 
 .avawrap{

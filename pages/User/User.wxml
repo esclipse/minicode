@@ -1,20 +1,12 @@
 <!--pages/User/User.wxml-->
 <view class="page">
   <view class="avatar">
-  <view class="avawrap">
+  <!-- <view class="avawrap">
     <image src="{{avatarUrl}}" class="avatarimg"></image>
     <text class="username">{{nickName}}</text>
+  </view> -->
+    <image src="/images/bguser.png" class="bguser"></image>
   </view>
-   
-  </view>
-        <!-- <navigator url="./baoxiulog/baoxiulog"     hover-class="navigator-hover" class="useritem">
-        <view class="iconimgwrap">
-<image src="{{userimg[0]}}" class="iconimg"></image>
-        </view>
-        <view class="usertext">
-          <text>物流记录</text>
-        </view>
-        </navigator> -->
         <view class="navigator">
          <navigator url="./repair/repair"     hover-class="navigator-hover" class="useritem">
          <view class="iconimgwrap">

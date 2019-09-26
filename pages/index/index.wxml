@@ -1,87 +1,48 @@
 <view class="page">
 <view class="page__hd"></view>
 <view class="page__bd">
-    <swiper indicator-dots="{{indicatorDots}}"
+    <swiper indicator-dots="{{indicatorDots}}" class="swiperwrap"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}" wx:key="unique">
     <swiper-item>
-    <image src="{{item}}" class="slide-image"/>
+        <image src="{{item}}" class="swiper"/>
     </swiper-item>
   </block>
   </swiper>
 <view>
 </view>
 <view class="section">
-  <view class="iconwrap">
-    <view class="sectionicon">
-        <image src="{{sectionicon[0]}}" class="iconimg">
-        </image>
-    </view>
-    <button open-type="contact" size="mini" class="zixun">在线咨询</button>
+    <view class="sectionicon kefu">
+<image src="{{sectionicon[0]}}" class="iconimg"></image>
+     <button class="btn" open-type="contact"></button>
   </view>
-   <view class="iconwrap">
-    <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="sectionicon">
+   
+    <navigator url="/pages/Hardware/Hardware"  class="sectionicon">
 <image src="{{sectionicon[1]}}" class="iconimg"></image>
     </navigator>
-    <!-- <text class="icontext">硬件报修</text> -->
-    <button size="mini" class="zixun">硬件报修</button>
-  </view>
-   <view class="iconwrap">
-    <navigator url="/pages/Submit/Submit"     hover-class="navigator-hover" class="sectionicon">
+
+     <navigator url="/pages/Payment/Payment" class="sectionicon">
 <image src="{{sectionicon[2]}}" class="iconimg"></image>
     </navigator>
-    <!-- <text class="icontext">提交工单</text> -->
-    <button size="mini" class="zixun">提交工单</button>
-  </view>
-   <view class="iconwrap">
-    <navigator url="/pages/Payment/Payment"     hover-class="navigator-hover" class="sectionicon">
-<image src="{{sectionicon[3]}}" class="iconimg"></image>
-    </navigator>
-    <!-- <text class="icontext">支付费用</text> -->
-    <button size="mini" class="zixun">支付费用</button>    
-  </view>
+  
+</view>
+
+<view class="guanggao">
+    <image src="{{sectionicon[3]}}" class="gimg"></image>
 </view>
   <view class="componey">
     <view class="h2">公司动态</view>
-    <view class="compontyitem">
-        <view class="img">
-            <image src="{{activeimg[0]}}" class="imgs"></image>
-        </view>
-        <view class="detail">
-          <text class="topic">[话题]</text><text>希科普公司正在快速发展 </text>
-        </view>
-     </view>
-     
-       <view class="compontyitem">
-        <view class="img">
-            <image src="{{activeimg[0]}}" class="imgs"></image>
-        </view>
-        <view class="detail">
-          <text class="topic">[话题]</text><text>希科普公司正在快速发展 </text>
-        </view>
-     </view>
-
-       <view class="compontyitem">
-        <view class="img">
-            <image src="{{activeimg[0]}}" class="imgs"></image>
-        </view>
-        <view class="detail">
-          <text class="topic">[话题]</text><text>希科普公司正在快速发展 </text>
-        </view>
-     </view>
+                 <block wx:for="{{activearr}}" wx:key="*this">
+                    <view class="compontyitem">
+                        <view class="img">
+                            <image src="{{item.img}}" class="imgs"></image>
+                        </view>
+                        <view class="detail">
+                          <view class="topic">话题sdfs</view>
+                          <view class="neirong">希科普公司正在快速发展希科普公司正在快速发展</view>
+                        </view>
+                    </view> 
+                </block>
   </view>
- 
 </view>
-
-
-
-
-
-
-<!-- <view class="weui-footer">
-<view class="weui-footer__links">
-    <navigator url="" class="weui-footer__link">深圳市希科普有限公司</navigator>
-</view>
-<view class="weui-footer__text">Copyright © lcj</view>
-</view> -->
 </view>

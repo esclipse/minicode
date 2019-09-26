@@ -5,14 +5,14 @@ Page({
    * Page initial data
    */
   data: { 
-    imgUrls: ['../../images/swiper1.jpg', '../../images/swiper2.jpg'],
+    imgUrls: ['../../images/swiper1.png', '../../images/swiper2.jpg'],
     indicatorDots: true,
     autoplay: false,
     interval: 3000,
     duration: 500,
-    sectionicon: ['../../images/zixun.png', '../../images/baoxiu.png'
-    ,'../../images/tijiao.png', '../../images/zhifu.png'],
-    activeimg: ['../../images/swiper1.jpg']
+    sectionicon: ['../../images/1.png', '../../images/2.png'
+      , '../../images/3.png','../../images/guanggao.png'],
+    activearr: [{ id: 1, img: '../../images/swiper1.png' }, { id: 1, img: '../../images/swiper1.png' }]
   },
 
   /**

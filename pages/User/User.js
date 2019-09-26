@@ -28,14 +28,6 @@ Page({
       nickName,
       avatarUrl
     })
-    wx.setNavigationBarColor({
-      frontColor: '#ffffff',
-      backgroundColor: '#63c2de',
-      animation: {
-        duration: 400,
-        timingFunc: 'easeIn'
-      }
-    })
   },
 
   /**

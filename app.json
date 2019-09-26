@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/User/User",
     "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
@@ -13,12 +14,11 @@
     "pages/User/repair/repair",
     "pages/setting/setting",
     "pages/Hardware/Hardware",
-    "pages/Jilu/Jilu",
-    "pages/User/User"
+    "pages/Jilu/Jilu"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#63c2de",
+    "navigationBarBackgroundColor": "#447bf2",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
