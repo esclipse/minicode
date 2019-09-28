@@ -1,3 +1,3 @@
 <view>
-<text>hello world</text>
+    <Header left="报修记录" right="维护记录"/>
 </view>

@@ -24,25 +24,25 @@
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
+    "color": "#b2b2b2",
+    "selectedColor": "#3E77F1",
     "borderStyle": "black",
     "list": [
       {
-        "selectedIconPath": "images/selecthome.png",
-        "iconPath": "images/home.png",
+        "selectedIconPath": "images/shouye1.png",
+        "iconPath": "images/shouye.png.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "selectedIconPath": "images/baoxiulog.png",
-        "iconPath": "images/baoxiulog.png",
+        "selectedIconPath": "images/jilu.png.png",
+        "iconPath": "images/jilu1.png",
         "pagePath": "pages/Jilu/Jilu",
         "text": "记录"
       },
       {
         "selectedIconPath": "images/userselect.png",
-        "iconPath": "images/user.png",
+        "iconPath": "images/wode.png.png",
         "pagePath": "pages/User/User",
         "text": "我的"
       }

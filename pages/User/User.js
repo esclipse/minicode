@@ -7,13 +7,11 @@ Page({
    */
   data: {
     userimg: [
-      '../../images/wuliulog.png',
-      '../../images/baoxiulog.png',
-      '../../images/gongdan.png',
-      '../../images/question.png',
-      '../../images/fenxiang.png',
-      '../../images/mmiphone.png',
-      '../../images/auout.png',
+      '../../images/baoxiujilu.png.png',
+      '../../images/weixiujilu.png.png',
+      '../../images/wentifangkui.png.png',
+      '../../images/lianxikefu.png.png',
+      '../../images/guanyuwm.png.png',
       ],
     avatarUrl: '',
     nickName: ""

@@ -1,4 +1,4 @@
 <view class="header">
-  <button type="{{name === '1'? 'primary': 'default'}}" size="mini" bindtap="handleClick" data-name="1">硬件报修</button>
-  <button type="{{name === '2'? 'primary': 'default'}}" size="mini" bindtap="handleClick" data-name="2">软件维护</button>
+  <button type="{{name === '1'? 'primary': 'default'}}" size="mini" bindtap="handleClick" data-name="1">{{left}}</button>
+  <button type="{{name === '2'? 'primary': 'default'}}" size="mini" bindtap="handleClick" data-name="2">{{right}}</button>
 </view>

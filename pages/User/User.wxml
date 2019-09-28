@@ -10,7 +10,7 @@
         <view class="navigator">
          <navigator url="./repair/repair"     hover-class="navigator-hover" class="useritem">
          <view class="iconimgwrap">
-<image src="{{userimg[1]}}" class="iconimg"></image>
+<image src="{{userimg[0]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
           <text>报修记录</text>
@@ -19,7 +19,7 @@
         </navigator>
          <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem divider">
          <view class="iconimgwrap">
-         <image src="{{userimg[2]}}" class="iconimg"></image>
+         <image src="{{userimg[1]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
         <text>维护记录</text>
@@ -30,7 +30,7 @@
         </navigator>
         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
          <view class="iconimgwrap">
-         <image src="{{userimg[3]}}" class="iconimg"></image>
+         <image src="{{userimg[2]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
         <text>问题反馈</text>
@@ -39,17 +39,9 @@
         <text class="arrow"></text>
 
         </navigator>
-         <!-- <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
-         <view class="iconimgwrap">
-<image src="{{userimg[4]}}" class="iconimg"></image>
-         </view>
-        <view class="usertext">
-        <text>分享好友</text>
-        </view>
-        </navigator> -->
          <navigator url="./kefu/kefu"     hover-class="navigator-hover" class="useritem">
    <view class="iconimgwrap">
-<image src="{{userimg[5]}}" class="iconimg"></image>
+<image src="{{userimg[3]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
           <text>联系客服</text>
@@ -60,7 +52,7 @@
         </navigator>
          <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
    <view class="iconimgwrap">
-<image src="{{userimg[6]}}" class="iconimg"></image>
+<image src="{{userimg[4]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
         <text>关于我们</text>

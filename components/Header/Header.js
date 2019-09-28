@@ -4,7 +4,8 @@ Component({
    * Component properties
    */
   properties: {
-
+    left: String,
+    right: String
   },
 
   /**
