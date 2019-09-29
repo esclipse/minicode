@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/Jilu/Jilu",
     "pages/User/User",
     "pages/login/login",
     "pages/index/index",
@@ -13,8 +14,7 @@
     "pages/User/kefu/kefu",
     "pages/User/repair/repair",
     "pages/setting/setting",
-    "pages/Hardware/Hardware",
-    "pages/Jilu/Jilu"
+    "pages/Hardware/Hardware"
   ],
   "window": {
     "backgroundTextStyle": "light",

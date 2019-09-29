@@ -8,7 +8,7 @@
     <image src="/images/bguser.png" class="bguser"></image>
   </view>
         <view class="navigator">
-         <navigator url="./repair/repair"     hover-class="navigator-hover" class="useritem">
+         <navigator url=""     hover-class="navigator-hover" class="useritem">
          <view class="iconimgwrap">
 <image src="{{userimg[0]}}" class="iconimg"></image>
          </view>
@@ -17,49 +17,52 @@
         </view>
         <text class="arrow"></text>
         </navigator>
-         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem divider">
+         <navigator url=""     hover-class="navigator-hover" class="useritem divider">
          <view class="iconimgwrap">
          <image src="{{userimg[1]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
         <text>维护记录</text>
-
         </view>
         <text class="arrow"></text>
 
         </navigator>
-        <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
-         <view class="iconimgwrap">
+        <navigator url=""     hover-class="navigator-hover" class="useritem">
+        <view class="iconimgwrap">
          <image src="{{userimg[2]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
         <text>问题反馈</text>
-
         </view>
         <text class="arrow"></text>
-
         </navigator>
-         <navigator url="./kefu/kefu"     hover-class="navigator-hover" class="useritem">
+        <navigator url=""     hover-class="navigator-hover" class="useritem">
+        <view class="iconimgwrap">
+         <image src="{{userimg[2]}}" class="iconimg"></image>
+         </view>
+        <view class="usertext">
+        <text>问卷调查</text>
+        </view>
+        <text class="arrow"></text>
+        </navigator>
+         <navigator url=""     hover-class="navigator-hover" class="useritem">
    <view class="iconimgwrap">
 <image src="{{userimg[3]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
           <text>联系客服</text>
-
         </view>
         <text class="arrow"></text>
 
         </navigator>
-         <navigator url="/pages/Hardware/Hardware"     hover-class="navigator-hover" class="useritem">
+         <navigator url=""     hover-class="navigator-hover" class="useritem">
    <view class="iconimgwrap">
 <image src="{{userimg[4]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
         <text>关于我们</text>
-
         </view>
         <text class="arrow"></text>
-
         </navigator>
         </view>
 </view>

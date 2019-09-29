@@ -5,7 +5,10 @@ Page({
    * Page initial data
    */
   data: {
-
+    jilu: [{ type: 0, pt: "智慧课堂", qs: "老师在备课中添加任务后确定不动" }, { type: 1, pt: "智慧课堂", qs: "老师在备课中添加任务后确定不动" }, { type: 2, pt: "智慧课堂", qs: "老师在备课中添加任务后确定不动"}],
+    trans: ['待受理', '已受理', '维护完成'],
+    statusimg: ['/images/daishouli.png.png','/images/yishouli.png.png','/images/zhengque.png.png'],
+    name: "1"
   },
 
   /**
@@ -62,5 +65,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  clickme: function (e) {
+    this.setData({
+      name: e.detail.name
+    })
   }
 })

@@ -1,3 +1,24 @@
 <view>
-    <Header left="报修记录" right="维护记录"/>
+    <Header bind:search="clickme" left="硬件报修" right="软件维护"/>
+    <view class="jilu">
+      <block wx:for="{{jilu}}" wx:key="*this">
+        <view class="card">
+          <view class="header">
+            <text class="time">申请时间:</text><text>2018/09/05</text>
+          </view>
+          <view class="section">
+            <view class="detail"></view>
+            <view class="wraps">
+              <view class="title"><text wx:if="{{name==='1'}}">硬件设备</text> <text wx:if="{{name==='2'}}">软件平台</text>: {{item.pt}}</view>
+              <view class="miaoshu">{{item.qs}}</view>
+            </view>
+          </view>
+          <view class="footer">
+            <image src="{{statusimg[item.type]}}" class="status"></image>
+            <text class="type">【软件维护】</text>
+            <text class="shouli" style="color: {{item.type === 0 ? '#F2830C': '#7C7A7A' }}">{{trans[item.type]}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
 </view>

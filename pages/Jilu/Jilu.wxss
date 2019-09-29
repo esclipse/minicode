@@ -1,1 +1,85 @@
 /* pages/Jilu/Jilu.wxss */
+
+.jilu{
+  background:rgba(246,247,249,1);
+  padding: 28rpx 17rpx 0;
+}
+
+.card{
+  height: 297rpx;
+  background:rgba(255,255,255,1);
+  border:2px solid rgba(238,238,238,1);
+  border-radius:6px;
+  margin-bottom: 7rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgss{
+  width: 44rpx;
+  height: 37rpx;
+  background: pink;
+}
+
+.status{
+  height: 36rpx;
+  width: 36rpx;
+}
+
+.header{
+  padding-left: 32rpx;
+  font-size:28rpx;
+  font-family:Source Han Sans CN;
+  font-weight:400;
+  color:rgba(124,122,122,1);
+  border-bottom:2px solid rgba(238,238,238,1);
+  height: 75rpx;
+  line-height: 75rpx;
+}
+
+.time{
+  margin-right: 10rpx;
+}
+
+.miaoshu {
+  font-size:28rpx;
+  font-family:Source Han Sans CN;
+  font-weight:400;
+  color:#7C7A7A;
+}
+
+.title {
+  font-size:28rpx;
+  font-family:Source Han Sans CN;
+  font-weight:400;
+  color:#414040;
+}
+
+.detail {
+  height: 110rpx;
+  width: 132rpx;
+  background: pink;
+  border-radius: 5rpx;
+  margin-right: 11rpx;
+}
+
+.footer{
+  height: 75rpx;
+  border-top:2px solid rgba(238,238,238,1);
+  display: flex;
+  align-items: center;
+  padding-left: 15rpx;
+}
+
+.section{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 15rpx;
+}
+
+.shouli {
+  color: #7C7A7A;
+  font-size: 26rpx;
+  margin-left: 4rpx;
+}

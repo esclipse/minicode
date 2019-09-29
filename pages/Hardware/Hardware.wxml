@@ -115,6 +115,6 @@
     </view>
 
     <view class="submit">
-      <button class="weui-btn" type="primary">提交</button>
+      <button class="weui-btn" style="background-color:#3478FA; color: #fff">提交</button>
     </view>
 </view>

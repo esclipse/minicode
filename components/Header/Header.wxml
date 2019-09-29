@@ -1,4 +1,4 @@
 <view class="header">
-  <button type="{{name === '1'? 'primary': 'default'}}" size="mini" bindtap="handleClick" data-name="1">{{left}}</button>
-  <button type="{{name === '2'? 'primary': 'default'}}" size="mini" bindtap="handleClick" data-name="2">{{right}}</button>
+  <button size="mini" bindtap="handleClick" data-name="1" style="background-color: {{name === '1'? '#3478FA': '#fff'}}; color: {{ name === '1' ? '#fff': '#3478FA'}}">{{left}}</button>
+  <button size="mini" bindtap="handleClick" data-name="2" style="background-color: {{name === '2'? '#3478FA': '#fff'}}; color: {{ name === '2' ? '#fff': '#3478FA'}}">{{right}}</button>
 </view>

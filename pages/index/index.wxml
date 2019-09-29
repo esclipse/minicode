@@ -13,18 +13,19 @@
 </view>
 <view class="section">
     <view class="sectionicon kefu">
+    <text class="imgtext">在线咨询</text>
 <image src="{{sectionicon[0]}}" class="iconimg"></image>
      <button class="btn" open-type="contact"></button>
   </view>
-   
-    <navigator url="/pages/Hardware/Hardware"  class="sectionicon">
-<image src="{{sectionicon[1]}}" class="iconimg"></image>
+    <navigator url="/pages/Hardware/Hardware"  class="sectionicon" hover-class="none">
+      <text class="imgtext">硬件报修</text>      
+      <image src="{{sectionicon[1]}}" class="iconimg"></image>
     </navigator>
 
-     <navigator url="/pages/Payment/Payment" class="sectionicon">
-<image src="{{sectionicon[2]}}" class="iconimg"></image>
+     <navigator url="/pages/Payment/Payment" class="sectionicon" hover-class="none">
+        <text class="imgtext">软件维护</text>      
+        <image src="{{sectionicon[2]}}" class="iconimg" ></image>
     </navigator>
-  
 </view>
 
 <view class="guanggao">
@@ -38,8 +39,8 @@
                             <image src="{{item.img}}" class="imgs"></image>
                         </view>
                         <view class="detail">
-                          <view class="topic">话题sdfs</view>
-                          <view class="neirong">希科普公司正在快速发展希科普公司正在快速发展</view>
+                          <view class="topic">{{item.title}}</view>
+                          <view class="neirong">{{item.section}}</view>
                         </view>
                     </view> 
                 </block>

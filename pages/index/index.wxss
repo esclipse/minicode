@@ -1,9 +1,10 @@
 .section{
-  padding: 0 10rpx;
+  padding: 0 44rpx;
   display: flex;
-  justify-content: space-around;
-  background: #fff;
+  justify-content: space-between;
   padding-top: 30rpx;
+  background: #fff;
+  padding-bottom: 10rpx;
 }
 
 .swiper{
@@ -12,8 +13,17 @@
 }
 
 .sectionicon{
-  height: 193rpx;
-  width: 306rpx;
+  position: relative;
+}
+
+.imgtext {
+  position: absolute;
+  font-size:24rpx;
+  font-family:Source Han Sans CN;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  left: 54rpx;
+  top: 90rpx;
 }
 
 .page{
@@ -26,8 +36,8 @@
 }
 
 .iconimg{
-  height: 100%;
-  width: 100%;
+  height: 134rpx;
+  width: 203rpx;
 }
 
 
@@ -43,14 +53,14 @@
 
 .compontyitem{
   background: #fff;
-  padding-top: 8rpx;
+  padding-top: 13rpx;
   padding-bottom: 13rpx;
   display: flex;
   border-bottom:2px solid rgba(238,238,238,1);
 }
 
 .componey{
-  padding:21rpx;
+  padding:22rpx;
   background: #fff;
 }
 
@@ -118,7 +128,7 @@
 
 .guanggao{
   height: 136rpx;
-  padding: 0 20rpx 15rpx;
+  padding: 0 22rpx 15rpx;
   background: #fff;
   margin-bottom: 5rpx;
 }
