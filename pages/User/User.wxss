@@ -65,7 +65,7 @@
 }
 
 .avatar {
-  height: 192rpx;
+  height: 300rpx;
   background: #fff;
   position: relative;
   padding-bottom: 40rpx;
@@ -88,7 +88,7 @@
   width: 100rpx;
   position: absolute;
   left: 78rpx;
-  top: 68rpx;
+  top: 168rpx;
 }
 
 .username{

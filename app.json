@@ -20,7 +20,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#447bf2",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
@@ -41,7 +42,7 @@
         "text": "记录"
       },
       {
-        "selectedIconPath": "images/wode.png.png",
+        "selectedIconPath": "images/wode1.png.png",
         "iconPath": "images/wode.png.png",
         "pagePath": "pages/User/User",
         "text": "我的"

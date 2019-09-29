@@ -1,8 +1,12 @@
 /* pages/Jilu/Jilu.wxss */
-
 .jilu{
   background:rgba(246,247,249,1);
   padding: 28rpx 17rpx 0;
+}
+
+.navbar{
+  height: 120rpx;
+  background: linear-gradient(to right,#196CF8 , #4982FD);
 }
 
 .card{

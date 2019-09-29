@@ -1,4 +1,6 @@
-<view>
+<!-- <nav-bar navbar-data='xxxxx'></nav-bar> -->
+<view class="jiluwrap">
+    <view class="navbar" style="height: 120rpx; background: linear-gradient(to right,#196CF8 , #4982FD);"></view>
     <Header bind:search="clickme" left="硬件报修" right="软件维护"/>
     <view class="jilu">
       <block wx:for="{{jilu}}" wx:key="*this">
