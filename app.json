@@ -14,7 +14,9 @@
     "pages/User/kefu/kefu",
     "pages/User/repair/repair",
     "pages/setting/setting",
-    "pages/Hardware/Hardware"
+    "pages/Hardware/Hardware",
+    "pages/wenjuan/wenjuan",
+    "pages/WebView/WebView"
   ],
   "window": {
     "backgroundTextStyle": "light",

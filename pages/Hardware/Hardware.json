@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "Header": "/components/Header/Header"
+    "Header": "/components/Header/Header",
+    "nav-bar": "/components/NavBar/NavBar"
   },
   "navigationBarTitleText": "硬件报修"
 }

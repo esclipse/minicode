@@ -1,0 +1,4 @@
+<view>
+    <view class="navbar" style="height: 150rpx; background: linear-gradient(to right,#196CF8 , #4982FD);"></view>
+    
+</view>

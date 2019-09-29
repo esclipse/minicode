@@ -37,12 +37,12 @@
         </view>
         <text class="arrow"></text>
         </navigator>
-        <navigator url=""     hover-class="navigator-hover" class="useritem">
+        <navigator url="../wenjuan/wenjuan" hover-class="navigator-hover" class="useritem">
         <view class="iconimgwrap">
          <image src="{{userimg[2]}}" class="iconimg"></image>
          </view>
         <view class="usertext">
-        <text>问卷调查</text>
+         <text>问卷调查</text>
         </view>
         <text class="arrow"></text>
         </navigator>
@@ -54,7 +54,6 @@
           <text>联系客服</text>
         </view>
         <text class="arrow"></text>
-
         </navigator>
          <navigator url=""     hover-class="navigator-hover" class="useritem">
    <view class="iconimgwrap">
