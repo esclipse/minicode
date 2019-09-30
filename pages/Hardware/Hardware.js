@@ -108,5 +108,15 @@ Page({
     this.setData({
       name: e.detail.name
     })
+  },
+
+  formSubmit: function (e) {
+    console.log('hello world',e );
+    wx.request({
+      url: 'http://169.254.202.110:80/getRepairLog',
+      success: function(res){
+        console.log(res, 'res')
+      }
+    })
   }
 })
