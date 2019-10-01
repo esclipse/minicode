@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/Jilu/Jilu",
     "pages/User/User",
-    "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
     "pages/repair/repair",
@@ -16,7 +16,8 @@
     "pages/setting/setting",
     "pages/Hardware/Hardware",
     "pages/wenjuan/wenjuan",
-    "pages/WebView/WebView"
+    "pages/WebView/WebView",
+    "pages/Ruanjian/Ruanjian"
   ],
   "window": {
     "backgroundTextStyle": "light",

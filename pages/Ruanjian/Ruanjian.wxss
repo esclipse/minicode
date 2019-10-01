@@ -1,0 +1,12 @@
+
+.divider{
+  height: 20rpx;
+}
+
+.submit{
+  padding: 30rpx;
+}
+
+.hardwrap{
+  background: #f5f5f5;
+}

@@ -13,7 +13,7 @@ Page({
     countryCodeIndex: 0,
     schoolIndex: 0,
     school: ["请选择", "山西大学", "深圳大学", "香港大学"],
-    name: "1",
+    name: "2",
   },
 
   /**
@@ -111,33 +111,23 @@ Page({
   },
 
   formSubmit: function (e) {
-    const { xinghao, xuexiao, username, phone, question } = e.detail.value;
+    console.log('hello world', e);
+    const { pingtai, xuexiao, username, phone, question } = e.detail.value;
     const { countryCodes, school } = this.data;
-    wx.uploadFile({
-      url: 'http://localhost/upload', //仅为示例，非真实的接口地址
-      filePath: this.data.files[0],
-      name: 'file',
-      formData: {
-        'user': 'test'
-      },
-      success(res) {
-        console.log('upload', res)
-      }
-    })
     wx.request({
       url: 'http://localhost/putRepaireLog',
       data: {
-        xinghao: countryCodes[xinghao],
+        pintai: pingtai[pingtai],
         xuexiao: school[xuexiao],
         username,
         phone,
         question,
         status: 0,
-        files: this.data.files[0],
-        type: 1
+        files: this.data.files,
+        type: 2
       },
       method: "put",
-      success: function(res){
+      success: function (res) {
         wx.showModal({
           title: '',
           content: '提交成功',

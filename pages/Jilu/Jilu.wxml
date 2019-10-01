@@ -1,24 +1,25 @@
 <!-- <nav-bar navbar-data='xxxxx'></nav-bar> -->
+<wxs module="filters" src="../../utils/filter.wxs"></wxs>
 <view class="jiluwrap">
     <view class="navbar" style="height: 150rpx; background: linear-gradient(to right,#196CF8 , #4982FD);"></view>
-    <Header bind:search="clickme" left="报修记录" right="维护纪律"/>
+    <Header bind:search="clickme" left="报修记录" right="维护记录"/>
     <view class="jilu">
-      <block wx:for="{{jilu}}" wx:key="*this">
+      <block wx:for="{{reqaireList}}" wx:key="item._id">
         <view class="card">
           <view class="header">
-            <text class="time">申请时间:</text><text>2018/09/05</text>
+            <text class="time">申请时间:</text><text>{{item.createTime}}</text>
           </view>
           <view class="section">
             <view class="detail"></view>
             <view class="wraps">
-              <view class="title"><text wx:if="{{name==='1'}}">硬件设备</text> <text wx:if="{{name==='2'}}">软件平台</text>: {{item.pt}}</view>
-              <view class="miaoshu">{{item.qs}}</view>
+              <view class="title"><text wx:if="{{name==='1'}}">硬件设备</text> <text wx:if="{{name==='2'}}">软件平台</text>: {{item.xinghao}}</view>
+              <view class="miaoshu">{{item.question}}</view>
             </view>
           </view>
           <view class="footer">
-            <image src="{{statusimg[item.type]}}" class="status"></image>
-            <text class="type">【软件维护】</text>
-            <text class="shouli" style="color: {{item.type === 0 ? '#F2830C': '#7C7A7A' }}">{{trans[item.type]}}</text>
+            <image src="{{statusimg[item.status]}}" class="status"></image>
+            <text class="type">【硬件报修】</text>
+            <text class="shouli" style="color: {{item.status === 0 ? '#F2830C': '#7C7A7A' }}">{{trans[item.status]}}</text>
           </view>
         </view>
       </block>

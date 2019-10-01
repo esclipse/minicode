@@ -22,7 +22,7 @@
       <image src="{{sectionicon[1]}}" class="iconimg"></image>
     </navigator>
 
-     <navigator url="/pages/Hardware/Hardware" class="sectionicon" hover-class="none">
+     <navigator url="/pages/Ruanjian/Ruanjian" class="sectionicon" hover-class="none">
         <text class="imgtext">软件维护</text>      
         <image src="{{sectionicon[2]}}" class="iconimg" ></image>
     </navigator>
