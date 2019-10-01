@@ -113,17 +113,6 @@ Page({
   formSubmit: function (e) {
     const { xinghao, xuexiao, username, phone, question } = e.detail.value;
     const { countryCodes, school } = this.data;
-    wx.uploadFile({
-      url: 'http://localhost/upload', //仅为示例，非真实的接口地址
-      filePath: this.data.files[0],
-      name: 'file',
-      formData: {
-        'user': 'test'
-      },
-      success(res) {
-        console.log('upload', res)
-      }
-    })
     wx.request({
       url: 'http://localhost/putRepaireLog',
       data: {

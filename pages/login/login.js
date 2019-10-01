@@ -12,30 +12,30 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    wx.checkSession({
-      success() {
-        // session_key 未过期，并且在本生命周期一直有效;
-        console.log('hello world');
-        wx.switchTab({
-          url: '../index/index',
-        })
-      },
-      fail() {
-        // session_key 已经失效，需要重新执行登录流程
-        //重新登录
-        console.log('pls login again')
-      }
-    })
-    // wx.getSetting({
-    //   success: function(res) {
-    //     const userInfoAuth = res.authSetting['scope.userInfo'];
-    //     if(userInfoAuth){
-    //       wx.switchTab({
-    //         url: '../index/index',
-    //       })
-    //     }
+    // wx.checkSession({
+    //   success() {
+    //     // session_key 未过期，并且在本生命周期一直有效;
+    //     console.log('hello world');
+    //     wx.switchTab({
+    //       url: '../index/index',
+    //     })
+    //   },
+    //   fail() {
+    //     // session_key 已经失效，需要重新执行登录流程
+    //     //重新登录
+    //     console.log('pls login again')
     //   }
     // })
+    wx.getSetting({
+      success: function(res) {
+        const userInfoAuth = res.authSetting['scope.userInfo'];
+        if(userInfoAuth){
+          wx.switchTab({
+            url: '../index/index',
+          })
+        }
+      }
+    })
   },
 
   /**
