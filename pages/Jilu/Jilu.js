@@ -9,7 +9,8 @@ Page({
     trans: ['待受理', '已受理', '维护完成'],
     statusimg: ['/images/daishouli.png.png','/images/yishouli.png.png','/images/zhengque.png.png'],
     name: "1",
-    reqaireList: []
+    reqaireList: [],
+    localhost: "http:127.0.0.1:80//"
   },
   /**
    * Lifecycle function--Called when page load
@@ -22,6 +23,7 @@ Page({
           type: 1
         },
         success: function(res){
+          console.log(res.data.reqaireList)
           that.setData({
             reqaireList: res.data.reqaireList
           });

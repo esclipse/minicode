@@ -91,6 +91,7 @@ Page({
       sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
       success: function (res) {
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+       
         that.setData({
           files: that.data.files.concat(res.tempFilePaths)
         });
@@ -113,9 +114,11 @@ Page({
   formSubmit: function (e) {
     const { xinghao, xuexiao, username, phone, question } = e.detail.value;
     const { countryCodes, school } = this.data;
-    wx.request({
-      url: 'http://localhost/putRepaireLog',
-      data: {
+    wx.uploadFile({
+      url: 'http://localhost/upload/img',
+      filePath: this.data.files[0],
+      name: 'img',
+      formData: {
         xinghao: countryCodes[xinghao],
         xuexiao: school[xuexiao],
         username,
@@ -125,8 +128,8 @@ Page({
         files: this.data.files[0],
         type: 1
       },
-      method: "put",
-      success: function(res){
+      success: function (res) {
+        console.log(res);
         wx.showModal({
           title: '',
           content: '提交成功',
@@ -136,5 +139,28 @@ Page({
         })
       }
     })
+    // wx.request({
+    //   url: 'http://localhost/putRepaireLog',
+    //   data: {
+    //     xinghao: countryCodes[xinghao],
+    //     xuexiao: school[xuexiao],
+    //     username,
+    //     phone,
+    //     question,
+    //     status: 0,
+    //     files: this.data.files[0],
+    //     type: 1
+    //   },
+    //   method: "put",
+    //   success: function(res){
+    //     wx.showModal({
+    //       title: '',
+    //       content: '提交成功',
+    //     });
+    //     wx.switchTab({
+    //       url: '../index/index',
+    //     })
+    //   }
+    // })
   }
 })

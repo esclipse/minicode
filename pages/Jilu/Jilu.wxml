@@ -11,6 +11,7 @@
           </view>
           <view class="section">
             <view class="detail"></view>
+            <image src='{{localhost + item.url}}'></image>
             <view class="wraps">
               <view class="title"><text wx:if="{{name==='1'}}">硬件设备</text> <text wx:if="{{name==='2'}}">软件平台</text>: {{item.xinghao}}</view>
               <view class="miaoshu">{{item.question}}</view>
